@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation Template to create a Security Group
+Parameters:
+  VPCId:
+    Type: String
+    Default: 'vpc-8e9704e5'
+Resources:
+  SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow specific ingress and egress traffic
+      VpcId:
+        Ref: VPCId
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 172.31.0.0/16
+        Description: Allow SSH traffic
+      SecurityGroupEgress:
+      - IpProtocol: -1
+        FromPort: -1
+        ToPort: -1
+        CidrIp: 0.0.0.0/0
+        Description: Allow all outbound traffic
+Outputs:
+  SecurityGroupId:
+    Description: The ID of the created Security Group
+    Value:
+      Ref: SecurityGroup
