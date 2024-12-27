@@ -10,7 +10,7 @@ Parameters:
     AllowedValues:
     - Enabled
     - Suspended
-    Default: 'Enabled'
+    Default: 'Suspended'
     Description: Enable versioning for the S3 bucket.
 
 Resources:
