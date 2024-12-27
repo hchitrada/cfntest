@@ -1,1 +1,4 @@
-
+template-file-path: /root/git2.yaml
+parameters:
+  VPCId: vpc-8e9704e5
+tags: {}
