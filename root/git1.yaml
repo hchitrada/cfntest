@@ -1,4 +1,4 @@
-template-file-path: root/git1.yaml
+template-file-path: root/git11.yaml
 parameters:
   BucketName: hchitrad-43132121
   EnableVersioning: Enabled
