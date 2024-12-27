@@ -1,5 +1,5 @@
 template-file-path: root1/git11.yaml
 parameters:
   BucketName: hchitrad-43132121
-  EnableVersioning: Enabled
+  EnableVersioning: Suspended
 tags: {}
