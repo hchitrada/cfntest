@@ -1,0 +1,5 @@
+template-file-path: root/nested/git11.yaml
+parameters:
+  BucketName: hchitrad-43132121
+  EnableVersioning: Suspended
+tags: {}
